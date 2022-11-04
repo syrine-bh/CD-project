@@ -1,0 +1,7 @@
+---
+# tasks file for build
+#buildproject
+             
+             - name: build app
+               shell: ng build --configuration production
+              
