@@ -5,4 +5,4 @@ localhost
 
 [Server:vars]
 ansible_python_interpreter= /usr/bin/python3
-ansi-user= linux2
+ansi-user= jenkins
