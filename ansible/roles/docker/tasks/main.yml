@@ -4,7 +4,7 @@
   docker_image:
     name: devops 
     build:
-     path: /var/lib/jenkins/workspace/devops
+     path: /var/lib/jenkins/workspace/CD-project
      pull: no
     source: build
     state: present
