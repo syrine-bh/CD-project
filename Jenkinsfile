@@ -11,18 +11,13 @@ pipeline
 				}
 			}
 		}
-		stage('install') {
-	    	steps{
-	     		script{
-	     	  		sh "npm install"
-	          	}
-	        }
-	    }
+		
 	 	stage('build') {
 	    	steps{
 	     		script{
+	     	          sh "npm install"
 
-	              sh " ansible-playbook ansible/build.yml  -i /ansible/inventory/host.yml -e 'ansible_become_password=ansible' -vvv "
+	                  sh " ansible-playbook ansible/build.yml  -i /ansible/inventory/host.yml -e 'ansible_become_password=ansible' -vvv "
 
 	           }
 	        }
